@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.softwave</groupId>
-    <artifactId>atividade-em-grupo-arquitetura-limpa-grupo-5-softwave</artifactId>
+    <artifactId>clean-arch-softwave</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>Projeto Arquitetura Limpa - Grupo 5 Softwave</name>
@@ -18,17 +18,20 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <version>3.2.5</version>
         </dependency>
         <!-- Spring Boot Starter Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>3.2.5</version>
             <scope>test</scope>
         </dependency>
         <!-- H2 Database -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+            <version>2.2.224</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
