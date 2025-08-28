@@ -1,6 +1,8 @@
 package com.softwave.clean_arch_softwave.entities;
 
+import jakarta.validation.constraints.NotBlank;
 import jdk.jfr.Name;
+import org.springframework.data.annotation.Id;
 
 import java.util.UUID;
 
