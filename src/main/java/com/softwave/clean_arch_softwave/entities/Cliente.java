@@ -1,4 +1,5 @@
 package com.softwave.clean_arch_softwave.entities;
+import com.softwave.clean_arch_softwave.entities.valueobjects.Cpf;
 
 import jakarta.validation.constraints.NotBlank;
 import jdk.jfr.Name;
@@ -17,13 +18,17 @@ public class Cliente {
     @NotBlank
     private Integer idade;
 
+    private Cpf cpf;
+
     private String profissao;
 
-    public UUID getId() {
+    public UUID getId()
+    {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(UUID id)
+    {
         this.id = id;
     }
 
@@ -49,5 +54,15 @@ public class Cliente {
 
     public void setProfissao(String profissao) {
         this.profissao = profissao;
+    }
+
+    public Cpf getCpf()
+    {
+        return cpf;
+    }
+
+    public void setCpf(String cpf)
+    {
+        this.cpf = new Cpf(cpf);
     }
 }
