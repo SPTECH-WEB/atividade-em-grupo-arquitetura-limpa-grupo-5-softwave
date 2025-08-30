@@ -4,16 +4,25 @@ import com.softwave.clean_arch_softwave.entities.Cliente;
 import com.softwave.clean_arch_softwave.entities.Risco;
 import com.softwave.clean_arch_softwave.entities.valueobjects.Cpf;
 import com.softwave.clean_arch_softwave.entities.valueobjects.Telefone;
-
-import java.util.UUID;
+import jakarta.validation.constraints.*;
 
 public class ClienteRequestDTO {
 
+    @NotBlank
     private String nome;
+
+    @NotNull
     private Integer idade;
+
+    @NotBlank
+    @Email
+    private String email;
     private String cpf;
     private String telefone;
     private String profissao;
+
+
+    @Positive
     private double rendaMensal;
 
     public ClienteRequestDTO() {
@@ -22,6 +31,7 @@ public class ClienteRequestDTO {
     public ClienteRequestDTO(
             String nome,
             Integer idade,
+            String email,
             String cpf,
             String telefone,
             String profissao,
@@ -29,6 +39,7 @@ public class ClienteRequestDTO {
     ) {
         this.nome = nome;
         this.idade = idade;
+        this.email = email;
         this.cpf = cpf;
         this.telefone = telefone;
         this.profissao = profissao;
@@ -39,6 +50,7 @@ public class ClienteRequestDTO {
         Cliente cliente = new Cliente(
                 dto.getNome(),
                 dto.getIdade(),
+                dto.getEmail(),
                 new Cpf(dto.getCpf()),
                 new Telefone(dto.getTelefone()),
                 dto.getProfissao(),
@@ -52,6 +64,7 @@ public class ClienteRequestDTO {
         return new ClienteRequestDTO(
                 cliente.getNome(),
                 cliente.getIdade(),
+                cliente.getEmail(),
                 cliente.getCpf() != null ? cliente.getCpf().getNumero() : null,
                 cliente.getTelefone() != null ? cliente.getTelefone().getNumero() : null,
                 cliente.getProfissao(),
@@ -64,6 +77,9 @@ public class ClienteRequestDTO {
 
     public Integer getIdade() { return idade; }
     public void setIdade(Integer idade) { this.idade = idade; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
     public String getCpf() { return cpf; }
     public void setCpf(String cpf) { this.cpf = cpf; }

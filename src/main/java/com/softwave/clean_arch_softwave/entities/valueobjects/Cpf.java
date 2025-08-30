@@ -1,11 +1,18 @@
 package com.softwave.clean_arch_softwave.entities.valueobjects;
 
+import jakarta.persistence.Embeddable;
+
 import java.util.Objects;
 
+@Embeddable
 public final class Cpf
 {
 
     private final String numero;
+
+    protected Cpf() {
+        this.numero = null;
+    }
 
     public Cpf(String numero)
     {
@@ -18,8 +25,10 @@ public final class Cpf
         this.numero = digitos;
     }
 
-    public String getNumero()
-    {
+
+
+
+    public String getNumero() {
         return numero;
     }
 

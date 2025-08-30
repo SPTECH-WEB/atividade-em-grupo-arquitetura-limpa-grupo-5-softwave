@@ -2,31 +2,29 @@ package com.softwave.clean_arch_softwave.entities;
 import com.softwave.clean_arch_softwave.entities.valueobjects.Cpf;
 import com.softwave.clean_arch_softwave.entities.valueobjects.Telefone;
 
-import jakarta.validation.constraints.NotBlank;
-import jdk.jfr.Name;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 
-import java.util.UUID;
-
+@Entity
 public class Cliente {
 
     @Id
-    private UUID id;
-
-    @Name("nome_completo")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String nome;
-
-    @NotBlank
     private Integer idade;
+    private String email;
 
+    @Embedded
+    @AttributeOverride(name = "numero", column = @Column(name = "cpf_numero"))
     private Cpf cpf;
 
+    @Embedded
+    @AttributeOverride(name = "numero", column = @Column(name = "telefone_numero"))
     private Telefone telefone;
 
     private String profissao;
-
     private Risco risco;
-
     private double rendaMensal;
 
     public Cliente() {
@@ -35,6 +33,7 @@ public class Cliente {
     public Cliente(
             String nome,
             Integer idade,
+            String email,
             Cpf cpf,
             Telefone telefone,
             String profissao,
@@ -43,6 +42,7 @@ public class Cliente {
     ) {
         this.nome = nome;
         this.idade = idade;
+        this.email = email;
         this.cpf = cpf;
         this.telefone = telefone;
         this.profissao = profissao;
@@ -50,9 +50,10 @@ public class Cliente {
     }
 
     public Cliente(
-            UUID id,
+            int id,
             String nome,
             Integer idade,
+            String email,
             Cpf cpf,
             Telefone telefone,
             String profissao,
@@ -62,6 +63,7 @@ public class Cliente {
         this.id = id;
         this.nome = nome;
         this.idade = idade;
+        this.email = email;
         this.cpf = cpf;
         this.telefone = telefone;
         this.profissao = profissao;
@@ -69,12 +71,15 @@ public class Cliente {
         this.rendaMensal = rendaMensal;
     }
 
-    public UUID getId()
+    public Cliente(String nome, Integer idade, String email, Cpf cpf, Telefone telefone, String profissao, double rendaMensal, Risco risco) {
+    }
+
+    public int getId()
     {
         return id;
     }
 
-    public void setId(UUID id)
+    public void setId(int id)
     {
         this.id = id;
     }
@@ -85,6 +90,13 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Integer getIdade() {

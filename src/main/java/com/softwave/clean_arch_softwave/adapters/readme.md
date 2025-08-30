@@ -1,1 +1,0 @@
-Implementações: DB, APIs etc.
