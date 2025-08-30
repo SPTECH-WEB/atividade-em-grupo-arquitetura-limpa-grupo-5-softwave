@@ -25,6 +25,50 @@ public class Cliente {
 
     private String profissao;
 
+    private Risco risco;
+
+    private double rendaMensal;
+
+    public Cliente() {
+    }
+
+    public Cliente(
+            String nome,
+            Integer idade,
+            Cpf cpf,
+            Telefone telefone,
+            String profissao,
+            double rendaMensal
+
+    ) {
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.profissao = profissao;
+        this.rendaMensal = rendaMensal;
+    }
+
+    public Cliente(
+            UUID id,
+            String nome,
+            Integer idade,
+            Cpf cpf,
+            Telefone telefone,
+            String profissao,
+            Risco risco,
+            double rendaMensal
+    ) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.profissao = profissao;
+        this.risco = risco;
+        this.rendaMensal = rendaMensal;
+    }
+
     public UUID getId()
     {
         return id;
@@ -75,5 +119,21 @@ public class Cliente {
 
     public void setTelefone(String telefone) {
         this.telefone = new Telefone(telefone);
+    }
+
+    public Risco getRisco() {
+        return risco;
+    }
+
+    public void setRisco(int idade, double renda) {
+        this.risco = Risco.avaliarRisco(renda, idade);
+    }
+
+    public double getRendaMensal() {
+        return rendaMensal;
+    }
+
+    public void setRendaMensal(double rendaMensal) {
+        this.rendaMensal = rendaMensal;
     }
 }
