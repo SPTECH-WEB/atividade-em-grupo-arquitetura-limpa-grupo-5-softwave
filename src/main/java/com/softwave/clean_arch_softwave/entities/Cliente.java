@@ -1,5 +1,6 @@
 package com.softwave.clean_arch_softwave.entities;
 import com.softwave.clean_arch_softwave.entities.valueobjects.Cpf;
+import com.softwave.clean_arch_softwave.entities.valueobjects.Telefone;
 
 import jakarta.validation.constraints.NotBlank;
 import jdk.jfr.Name;
@@ -19,6 +20,8 @@ public class Cliente {
     private Integer idade;
 
     private Cpf cpf;
+
+    private Telefone telefone;
 
     private String profissao;
 
@@ -64,5 +67,13 @@ public class Cliente {
     public void setCpf(String cpf)
     {
         this.cpf = new Cpf(cpf);
+    }
+
+    public Telefone getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = new Telefone(telefone);
     }
 }
