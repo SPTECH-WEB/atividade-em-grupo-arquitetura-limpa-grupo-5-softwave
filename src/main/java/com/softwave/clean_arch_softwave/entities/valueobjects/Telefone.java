@@ -1,10 +1,17 @@
 package com.softwave.clean_arch_softwave.entities.valueobjects;
 
+import jakarta.persistence.Embeddable;
+
 import java.util.Objects;
 
+@Embeddable
 public final class Telefone {
 
     private final String numero;
+
+    protected Telefone() {
+        this.numero = null;
+    }
 
     public Telefone(String numero) {
         Objects.requireNonNull(numero, "Telefone não pode ser nulo");
@@ -15,9 +22,12 @@ public final class Telefone {
         this.numero = digitos;
     }
 
+
+
     public String getNumero() {
         return numero;
     }
+
 
     public String format() {
         if (numero.length() == 10) {
