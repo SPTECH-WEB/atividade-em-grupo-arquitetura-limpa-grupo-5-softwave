@@ -1,11 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/agYdFiud)
 # Integrantes do Grupo 5 
-Ana Claudia Ferreira da Silva   RA: 01241068              
-Bryan Henrique Ferro Lima    RA:01241109                
-Cristhian Lauriano Rocha Marqueze     RA: 01241187 
-Leonardo de Carvalho Santos  RA: 01241170               
-Letícia da Fonseca Santos RA: 01241032                      
-Luana Cruz dos Santos  RA:01241181                         
+- Ana Claudia Ferreira da Silva   RA: 01241068              
+- Bryan Henrique Ferro Lima    RA:01241109                
+- Cristhian Lauriano Rocha Marqueze  RA: 01241187 
+- Leonardo de Carvalho Santos  RA: 01241170               
+- Letícia da Fonseca Santos RA: 01241032                      
+- Luana Cruz dos Santos  RA:01241181                         
 
 # Divisão de Tarefas
 
