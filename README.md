@@ -23,7 +23,7 @@ Luana Cruz dos Santos
 Letícia da Fonseca Santos
 
 # Instruções para execução: 
-Deverá clonar o repositório com o comando `git clone` e rodar a aplicação no Intellij, depois utilizar o Insomnia para inserir os dados do cliente em formato json através do método POST  e depois passar como parâmetro o ID do cliente no método GET. 
+Deverá clonar o repositório com o comando `git clone` e rodar a aplicação no Intellij, depois utilizar o Insomnia para inserir os dados do cliente em formato json através do método POST colocando esse caminho na url http://localhost:8080/clientes e depois passar como parâmetro o ID do cliente no método GET (http://localhost:8080/clientes/{id}) para o retorno dos dados. 
 
 # 📊 API de Avaliação de Risco de Crédito
 
