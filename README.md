@@ -15,7 +15,7 @@ Leonardo de Carvalho Santos
 Ana Claudia Ferreira da Silva
 ### Validação Telefone: 
 Cristhian Lauriano Rocha Marqueze 
-### Classificação do Risco:
+### Classificação de Risco:
 Bryan Henrique Ferro Lima
 ### `POST /clientes` - Cadastra um cliente e aplica automaticamente a classificação de risco:
 Luana Cruz dos Santos  
