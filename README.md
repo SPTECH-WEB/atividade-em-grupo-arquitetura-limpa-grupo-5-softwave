@@ -17,9 +17,9 @@ Ana Claudia Ferreira da Silva
 Cristhian Lauriano Rocha Marqueze 
 ### Classificação de Risco:
 Bryan Henrique Ferro Lima
-### `POST /clientes` - Cadastra um cliente e aplica automaticamente a classificação de risco:
+### POST /clientes - Cadastra um cliente e aplica automaticamente a classificação de risco:
 Luana Cruz dos Santos  
-###  `GET /clientes/{id}` - Retorna os dados do cliente e sua classificação de risco
+###  GET /clientes/{id} - Retorna os dados do cliente e sua classificação de risco:
 Letícia da Fonseca Santos
 
 # Intruções para execução: 
