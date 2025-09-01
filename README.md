@@ -22,7 +22,7 @@ Luana Cruz dos Santos
 ###  GET /clientes/{id} - Retorna os dados do cliente e sua classificação de risco:
 Letícia da Fonseca Santos
 
-# Intruções para execução: 
+# Instruções para execução: 
 Deverá clonar o repositório com o comando `git clone` e rodar a aplicação no Intellij, depois utilizar o Insomnia para inserir os dados do cliente em formato json através do método POST  e depois passar como parâmetro o ID do cliente no método GET. 
 
 # 📊 API de Avaliação de Risco de Crédito
