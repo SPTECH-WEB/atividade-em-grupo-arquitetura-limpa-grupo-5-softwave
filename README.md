@@ -9,17 +9,17 @@ Luana Cruz dos Santos  RA:01241181
 
 # Divisão de Tarefas
 
-## Entidade Cliente e validações Springboot:
+### Entidade Cliente e validações Springboot:
 Leonardo de Carvalho Santos
-## Validação CPF: 
+### Validação CPF: 
 Ana Claudia Ferreira da Silva
-## Validação Telefone: 
+### Validação Telefone: 
 Cristhian Lauriano Rocha Marqueze 
-## Classificação do Risco:
+### Classificação do Risco:
 Bryan Henrique Ferro Lima
-## `POST /clientes` - Cadastra um cliente e aplica automaticamente a classificação de risco:
+### `POST /clientes` - Cadastra um cliente e aplica automaticamente a classificação de risco:
 Luana Cruz dos Santos  
-##  `GET /clientes/{id}` - Retorna os dados do cliente e sua classificação de risco
+###  `GET /clientes/{id}` - Retorna os dados do cliente e sua classificação de risco
 Letícia da Fonseca Santos
 
 # Intruções para execução: 
