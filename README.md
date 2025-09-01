@@ -1,4 +1,30 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/agYdFiud)
+# Integrantes do Grupo 5 
+Ana Claudia Ferreira da Silva   RA: 01241068              
+Bryan Henrique Ferro Lima    RA:01241109                
+Cristhian Lauriano Rocha Marqueze     RA: 01241187 
+Leonardo de Carvalho Santos  RA: 01241170               
+Letícia da Fonseca Santos RA: 01241032                      
+Luana Cruz dos Santos  RA:01241181                         
+
+# Divisão de Tarefas
+
+## Entidade Cliente e validações Springboot:
+Leonardo de Carvalho Santos
+## Validação CPF: 
+Ana Claudia Ferreira da Silva
+## Validação Telefone: 
+Cristhian Lauriano Rocha Marqueze 
+## Classificação do Risco:
+Bryan Henrique Ferro Lima
+## `POST /clientes` - Cadastra um cliente e aplica automaticamente a classificação de risco:
+Luana Cruz dos Santos  
+##  `GET /clientes/{id}` - Retorna os dados do cliente e sua classificação de risco
+Letícia da Fonseca Santos
+
+# Intruções para execução: 
+Deverá clonar o repositório com o comando `git clone` e rodar a aplicação no Intellij, depois utilizar o Insomnia para inserir os dados do cliente em formato json através do método POST  e depois passar como parâmetro o ID do cliente no método GET. 
+
 # 📊 API de Avaliação de Risco de Crédito
 
 Este projeto é uma prova de conceito para uma API REST que permite o cadastro de clientes e a avaliação automática de risco de crédito, baseada em critérios simples como renda e idade.
